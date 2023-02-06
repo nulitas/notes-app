@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+textarea {
+  margin: 20px;
+  padding: 20px;
+  resize: none;
+  outline: none;
+}
+
+.container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-button {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.remove-button:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.notes {
+  display: flex;
+}
+
+.box {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px 10px;
+  margin: 15px 50px;
+  position: relative;
+  height: auto;
+  animation: scale 0.4s;
+}
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.box p {
+  font-size: 17px;
+  font-family: sans-serif;
+}
